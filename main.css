@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@layer utilities {
+    .before\:content-home::before {
+        content: url("/images/home.png");
+        margin-right: 0.4rem;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .before\:content-compass::before {
+        content: url("/images/compass.png");
+        display: inline-block;
+        margin-right: 0.4rem;
+        vertical-align: middle;
+    }
+
+    .before\:content-disco::before {
+        content: url("/images/disco.png");
+        display: inline-block;
+        margin-right: 0.4rem;
+        vertical-align: middle;
+    }
+
+    .before\:content-artists::before {
+        content: url("/images/artists.png");
+        display: inline-block;
+        margin-right: 0.4rem;
+        vertical-align: middle;
+    }
+}
