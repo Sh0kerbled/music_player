@@ -27,4 +27,46 @@
         margin-right: 0.4rem;
         vertical-align: middle;
     }
+    .before\:content-recent::before {
+        content: url("/images/recent.png");
+        display: inline-block;
+        margin-right: 0.4rem;
+        vertical-align: middle;
+    }
+    .before\:content-niagara::before {
+        content: url("/images/niagara.png");
+        display: inline-block;
+        margin-right: 0.4rem;
+        vertical-align: middle;
+    }
+    .before\:content-favorite::before {
+        content: url("/images/favorite.png");
+        display: inline-block;
+        margin-right: 0.4rem;
+        vertical-align: middle;
+    }
+    .before\:content-playlist::before {
+        content: url("/images/playlist.png");
+        display: inline-block;
+        margin-right: 0.4rem;
+        vertical-align: middle;
+    }
+    .before\:content-add::before {
+        content: url("/images/add.png");
+        display: inline-block;
+        margin-right: 0.4rem;
+        vertical-align: middle;
+    }
+    .before\:content-settings::before {
+        content: url("/images/settings.png");
+        display: inline-block;
+        margin-right: 0.4rem;
+        vertical-align: middle;
+    }
+    .before\:content-logout::before {
+        content: url("/images/logout.png");
+        display: inline-block;
+        margin-right: 0.4rem;
+        vertical-align: middle;
+    }
 }
