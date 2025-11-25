@@ -4,52 +4,68 @@
         content: url("/images/home.png");
         margin-right: 0.4rem;
         display: inline-block;
-        vertical-align: middle;
+        position: relative;
+        top: 100%;
+        transform: translateY(15%);
     }
 
     .before\:content-compass::before {
         content: url("/images/compass.png");
         display: inline-block;
         margin-right: 0.4rem;
-        vertical-align: middle;
+        position: relative;
+            top: 100%;
+            transform: translateY(10%);
     }
 
     .before\:content-disco::before {
         content: url("/images/disco.png");
         display: inline-block;
         margin-right: 0.4rem;
-        vertical-align: middle;
+        position: relative;
+        top: 100%;
+        transform: translateY(15%);
     }
 
     .before\:content-artists::before {
         content: url("/images/artists.png");
         display: inline-block;
         margin-right: 0.4rem;
-        vertical-align: middle;
+        position: relative;
+            top: 100%;
+            transform: translateY(10%);
     }
     .before\:content-recent::before {
         content: url("/images/recent.png");
         display: inline-block;
         margin-right: 0.4rem;
-        vertical-align: middle;
+        position: relative;
+            top: 100%;
+            transform: translateY(10%);
     }
     .before\:content-niagara::before {
         content: url("/images/niagara.png");
         display: inline-block;
         margin-right: 0.4rem;
-        vertical-align: middle;
+        position: relative;
+            top: 100%;
+            transform: translateY(10%);
     }
     .before\:content-favorite::before {
         content: url("/images/favorite.png");
         display: inline-block;
         margin-right: 0.4rem;
-        vertical-align: middle;
+        position: relative;
+            top: 100%;
+            transform: translateY(10%);
     }
     .before\:content-playlist::before {
         content: url("/images/playlist.png");
         display: inline-block;
         margin-right: 0.4rem;
-        vertical-align: middle;
+        position: relative;
+            top: 100%;
+            transform: translateY(10%);
     }
     .before\:content-add::before {
         content: url("/images/add.png");

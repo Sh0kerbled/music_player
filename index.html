@@ -4,28 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/main.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <title>Document</title>
 </head>
-<body class="bg-[#1E1E1E]">
-    <div class="albums">
-        <div class="categories w-[19%] border-2 grid justify-center">
-            <h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#EE10B0] to-[#0E9EEF] mb-[6%] mt-[12%]">Melodies</h1>
-            <p class="text-[#EE10B0] mb-[6%]">Menu</p>
-            <a href="#" class="before:content-home text-white font-semibold mb-[6%]">Home</a>
-            <a href="#" class="before:content-compass text-white font-semibold mb-[6%]">Discover</a>
-            <a href="#" class="before:content-disco text-white bg-[#EE10B0] w-[120%] h-[40px] text-xl font-bold pt-[6px] pl-[8px] rounded-[9px] mb-[6%]">Albums</a>
-            <a href="#" class="before:content-artists text-white font-semibold mb-[6%]">Artists</a>
-            <p class="text-[#EE10B0] mb-[6%]">library</p>
-            <a href="#" class="before:content-recent text-white font-semibold mb-[6%]">Recently Added</a>
-            <a href="#" class="before:content-niagara text-white font-semibold mb-[6%]">Most Played</a>
-            <p class="text-[#EE10B0] mb-[6%]">Playlist and Favorite</p>
-            <a href="#" class="before:content-favorite text-white font-semibold mb-[6%]">Your Favorites</a>
-            <a href="#" class="before:content-playlist text-white font-semibold mb-[6%]">Your Playlist</a>
-            <a href="#" class="before:content-add text-[#0E9EEF] font-semibold mb-[6%]">Add Playlist</a>
-            <p class="text-[#EE10B0] mb-[6%]">General</p>
-            <a href="#" class="before:content-settings text-white font-semibold mb-[6%]">Settings</a>
-            <a href="#" class="before:content-logout text-[#EE10B0] font-semibold mb-[6%]">Logout</a>
+<body class="bg-[#1E1E1E] flex">
+    <nav class="w-[270px] flex flex-col items-center border-r-2 border-[#EE10B0] h-screen">
+        <ul class="*[&>li]:w-[174px] sticky space-y-[24px] [&>li:hover]:bg-gray-500">
+            <h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#EE10B0] to-[#0E9EEF] mt-[48px]">Melodies</h1>
+            <li><p class="text-[#EE10B0] font-semibold">Menu</p></li>
+            <li><a href="#" class="before:content-home text-white font-semibold">Home</a></li>
+            <li><a href="#" class="before:content-compass text-white font-semibold">Discover</a></li>
+            <li><a href="#" class="before:content-disco  text-white text-xl font-bold">Albums</a></li>
+            <li><a href="#" class="text-white font-semibold"><i class="before:content-artists"></i>Artists</a></li>
+            <li><a class="text-[#EE10B0] mb-[6%]">library</a></li>
+            <li><a href="#" class="before:content-recent text-white font-semibold">Recently Added</a></li>
+            <li><a href="#" class="before:content-niagara text-white font-semibold">Most Played</a></li>
+            <li><a class="text-[#EE10B0] mb-[6%]">Playlist and Favorite</a></li>
+            <li><a href="#" class="before:content-favorite text-white font-semibold">Your Favorites</a></li>
+            <li><a href="#" class="before:content-playlist text-white font-semibold">Your Playlist</a></li>
+            <li><a href="#" class="before:content-add text-[#0E9EEF] font-semibold">Add Playlist</a></li>
+            <li><a class="text-[#EE10B0]">General</a></li>
+            <li><a href="#" class="before:content-settings text-white font-semibold">Settings</a></li>
+            <li><a href="#" class="before:content-logout text-[#EE10B0] font-semibold">Logout</a></li>
+        </ul>
+    </nav>
+    <main class="pl-[5%] pt-[26px]">
+        <div class="w-[1440px] h-screen bg-gradient-to-r from-[#0b4a92] to-[#244b5e]">
+            <div class="w-[1440px] h-auto bg-gradient-to-r from-[#1171E2] to-[#53ADD6] pt-[43px] pl-[43px] pb-[53px] rounded-[10px] shadow-2xl flex">
+                <img class="rounded-[10px] shadow-xl/30" src="images/MyAddedSongs.png" width="268" height="268" draggable="false" alt="">
+                <div class="pl-[56px] font-bold space-y-[65px]">
+                    <p class="text-[40px] text-shadow-2xs text-white">My Added <a href="#"class="text-[#EE10B0]">Songs</a></p>
+                    <p class="text-white text-[20px]">Listen your favourite songs here!</p>
+                    <div class="flex space-x-[20px] text-white text-[20px]">
+                        <p>20 songs</p>
+                        <p class="text-[#EE10B0]">.</p>
+                        <p>1h 36m</p>
+                    </div>
+                </div>
+                <label for="audio-file"
+                    class="ml-auto self-end h-[40px] mr-[38px] text-white text-[20px] font-bold border-2 border-white px-[12px] shadow-2xl hover:border-[#EE10B0] hover:text-[#EE10B0] active:hover:border-[#9e0b74] active:text-[#9e0b74] cursor-pointer">Add Song</label>
+                
+                <input type="file" id="audio-file" name="myfile" accept=".mp3" class="hidden" />
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 p-4 text-white text-[20px]">
+                <div>&nbsp</div>
+                <div>Relase Date</div>
+                <div>Album</div>
+                <div>Time</div>
+            </div>
+            <div class="songs">
+                
+            </div>
         </div>
-    </div>
+    </main>
+    <script src="js/addSong.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsmediatags@3.9.7/dist/jsmediatags.min.js"></script>
 </body>
 </html>
