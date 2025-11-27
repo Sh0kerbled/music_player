@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/main.css">
     <link rel="icon" href="images/logo.png" type="image/png">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Apple Spotify</title>
 </head>
-<body class="bg-[#1E1E1E] flex">
+<body class="bg-[#1E1E1E] flex overflow-hidden">
     <nav class="w-[270px] flex flex-col items-center border-r-2 border-[#EE10B0] h-screen">
         <ul class="*[&>li]:w-[174px] sticky space-y-[24px] [&>li:hover]:bg-gray-500">
             <h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#EE10B0] to-[#0E9EEF] mt-[48px]">Melodies</h1>
             <li><p class="text-[#EE10B0] font-semibold hover: pointer-events-none">Menu</p></li>
             <li><a href="#" class="before:content-home text-white font-semibold">Home</a></li>
             <li><a href="#" class="before:content-compass text-white font-semibold">Discover</a></li>
-            <li><a href="#" class="before:content-disco  text-white text-xl font-bold">Albums</a></li>
+            <li><a href="#" class="before:content-disco text-white text-xl font-bold bg-[#EE10B0] pr-[70px] pt-[5px] pb-[5px] pl-[8px] rounded-[10px]">Albums</a></li>
             <li><a href="#" class="text-white font-semibold"><i class="before:content-artists"></i>Artists</a></li>
             <li><a class="text-[#EE10B0] mb-[6%]">library</a></li>
             <li><a href="#" class="before:content-recent text-white font-semibold">Recently Added</a></li>
@@ -49,15 +49,18 @@
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 p-4 text-white text-[20px]">
                 <div>&nbsp</div>
-                <div>Relase Date</div>
-                <div>Album</div>
                 <div>Time</div>
+                <div>Album</div>
+                <div>Rate Song</div>
             </div>
             <div class="songs">
-                
             </div>
         </div>
     </main>
     <script src="js/addSong.js" type="module"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

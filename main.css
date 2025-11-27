@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import 'animate.css';
+
 @layer utilities {
     .before\:content-home::before {
         content: url("/images/home.png");
